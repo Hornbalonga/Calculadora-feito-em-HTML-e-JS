@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+
+<h1>Calculadora</h1>
+
+<input type="text" id="txtValor1">
+
+<select id="operadores" onchange="controleDeSelecao()">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="calc">Expressão</option>
+</select>
+
+<input type="text" id="txtValor2">
+
+<br><br>
+
+<button onclick="calcular()">Calcular</button>
+<button onclick="limparCampos()">Limpar</button>
+
+<p id="saida">Resultado:</p>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
